@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./scripts/index.js" defer></script>
+    <script>
+      console.log(123);
+    </script>
+    <link rel="stylesheet" href="./styles/index.scss" />
+  </head>
+  <body>
+    <header>
+      <div class="row">
+        <div class="col-12 nav-panel"><h1>HEADER</h1></div>
+      </div>
+    </header>
+    <div id="root"></div>
+
+    <form name="contact" method="post" action="/send">
+      <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+          <label for="firstName">First name:</label><br />
+          <input
+            pattern="[A-Za-z]"
+            name="firstName"
+            type="text"
+            required
+            placeholder="Ivan"
+          />
+        </div>
+        <div class="col-3"></div>
+      </div>
+      <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+          <label for="lastName">Last name:</label><br />
+          <input
+            name="lastName"
+            type="text"
+            required
+            placeholder="Ivanov"
+            maxlength="5"
+          />
+        </div>
+        <div class="col-3"></div>
+      </div>
+      <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+          <label for="phone">Phone:</label><br />
+          <input name="phone" type="text" placeholder="+375 (XX) XXX XXX XX" />
+        </div>
+        <div class="col-3"></div>
+      </div>
+      <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+          <label for="email">Email:</label><br />
+          <input name="email" type="text" required placeholder="test@box.com" />
+        </div>
+        <div class="col-3"></div>
+      </div>
+      <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6"><input type="submit" name="" id="" /></div>
+      </div>
+    </form>
+
+    <div class="flex-container">
+      <div class="flex-item">test123</div>
+      <div class="flex-item">
+        <form id="customerForm">
+          <div>
+            <label for="Customer">Customer:</label><br />
+            <input name="Customer" type="text" />
+          </div>
+          <div>
+            <label for="Country">Country:</label><br />
+            <input name="Country" type="text" />
+          </div>
+          <div>
+            <label for="RegistrationNumber">Registration Number:</label><br />
+            <input name="RegistrationNumber" type="text" />
+          </div>
+          <button id="customerSend">Send</button>
+        </form>
+        <div id="demo" data-amount="465475"></div>
+      </div>
+      <div class="flex-item">test123</div>
+      <div class="flex-item">
+        Pellentesque habitant morbi tristique senectus et netus et malesuada
+        fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
+        ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
+        egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend
+        leo.
+      </div>
+      <div class="flex-item">test123</div>
+    </div>
+
+    <div class="grid-container">
+      <div class="grid-item">1</div>
+      <div class="grid-item">
+        Pellentesque habitant morbi tristique senectus et netus et malesuada
+        fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
+        ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
+        egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend
+        leo.
+      </div>
+      <div class="grid-item">3</div>
+      <div class="grid-item">4</div>
+      <div class="grid-item">5</div>
+      <div class="grid-item">
+        Pellentesque habitant morbi tristique senectus et netus et malesuada
+        fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
+        ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
+        egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend
+        leo.
+      </div>
+      <div class="grid-item">
+        Pellentesque habitant morbi tristique senectus et netus et malesuada
+        fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
+        ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
+        egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend
+        leo.
+      </div>
+      <div class="grid-item">8</div>
+      <div class="grid-item">9</div>
+    </div>
+
+    <footer>
+      <div class="row">
+        <div class="left-part col-3"></div>
+        <div class="center-part col-6">
+          texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext
+        </div>
+        <div class="right-part col-3"><div class="sample-content"></div></div>
+      </div>
+      <div>test1</div>
+    </footer>
+  </body>
+</html>
